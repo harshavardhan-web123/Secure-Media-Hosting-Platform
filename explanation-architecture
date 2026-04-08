@@ -1,0 +1,33 @@
+Explanation of Architecture
+🔹 1. End Users
+Users access media using browser
+
+Example:
+
+http://<EC2-Public-IP>/image.jpg
+🔹 2. EC2 Instance (Web Server)
+Hosts Apache (httpd) web server
+Acts as a secure middle layer
+Fetches media from S3 and serves to users
+🔹 3. IAM Role (Security Layer)
+Attached to EC2 instance
+Provides secure access to S3 bucket
+No need to store credentials manually
+
+👉 This is the most important security part
+
+🔹 4. Private S3 Bucket
+Stores media files (images/videos)
+Public access is completely blocked
+Only EC2 can access via IAM role
+🔹 5. Media Delivery
+EC2 copies media files from S3
+Stores them in /var/www/html
+Serves files via HTTP
+🔥 Key Features of This Architecture
+
+✅ Secure media storage
+✅ No public access to S3
+✅ IAM-based authentication
+✅ Controlled access via EC2
+✅ Simple and cost-effective
