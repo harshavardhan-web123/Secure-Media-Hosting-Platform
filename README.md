@@ -59,9 +59,7 @@ aws s3 cp s3://your-bucket-name/ /var/www/html/ --recursive
 🔹 Step 8: Access Media
 Open browser:
 http://<EC2-Public-IP>/image.jpg
-📸 Screenshots
 
-(Add your screenshots here)
 
 EC2 Instance Setup
 Apache Installation
@@ -91,11 +89,6 @@ Automate deployment using scripts
 Harshavardhan
 BCA Student | Aspiring Cloud & DevOps Engineer
 
-## ⚙️ Setup Steps
-
-### 🔹 Step 1: Launch EC2 Instance
-- Create EC2 instance
-- Connect using SSH
 
 ---
 
