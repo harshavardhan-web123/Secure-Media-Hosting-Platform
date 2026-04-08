@@ -1,0 +1,16 @@
+                End Users (Browser)
+                        │
+                        ▼
+                 EC2 Instance (Web Server)
+                ──────────────────────────
+                Apache (httpd)
+                Hosts Media Files
+                        │
+                        ▼
+              IAM Role (Secure Access)
+                        │
+                        ▼
+             Private S3 Bucket (Media Storage)
+                ──────────────────────────
+                Images / Videos / Files
+                (Public Access Blocked)
