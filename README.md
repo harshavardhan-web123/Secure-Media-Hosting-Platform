@@ -90,10 +90,4 @@ Harshavardhan
 BCA Student | Aspiring Cloud & DevOps Engineer
 
 
----
-
-### 🔹 Step 2: Install Apache
-
-sudo yum install httpd -y
-sudo systemctl start httpd
 
