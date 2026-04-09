@@ -43,19 +43,24 @@ User → EC2 (Web Server) → IAM Role → Private S3 Bucket → Media Files
 9. Copy media files from S3 to web directory
 10. Access media using EC2 public IP
 
----Step 3: Create Private S3 Bucket
+Step 3: Create Private S3 Bucket
 Go to S3 service
 Create bucket
 Enable Block Public Access
+
 🔹 Step 4: Upload Media Files
 Upload images/videos to S3 bucket
+
 🔹 Step 5: Create IAM Role
 Create role with S3 access policy
 Attach role to EC2 instance
+
 🔹 Step 6: Install AWS CLI
 sudo yum install aws-cli -y
+
 🔹 Step 7: Copy Media Files from S3
 aws s3 cp s3://your-bucket-name/ /var/www/html/ --recursive
+
 🔹 Step 8: Access Media
 Open browser:
 http://<EC2-Public-IP>/image.jpg
